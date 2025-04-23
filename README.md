@@ -1,54 +1,79 @@
-# React + TypeScript + Vite
+# My Super App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<br>
 
-Currently, two official plugins are available:
+My Super App é a central definitiva para otimizar meu trabalho, organizar projetos, concentrar aprendizado e evitar a perda de foco. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O seu nome é relacionado aos aplicativos chineses que abrigam diversas funções básicas na vida do usuário, pois esse é o intuito do `msa`, se tornar um pilar no meu dia-a-dia, trabalhando como um segundo cérebro e até um clone para ferramentas demoradas e tediosas.
 
-## Expanding the ESLint configuration
+Enquanto o sistema de front-end da ferramenta é totalmente open-source, o sistema de back-end não é. No entanto, nada lhe impede de utilizar o estado atual da aplicação e construir seu próprio produto.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<br>
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📚 Objetivo
+Reunir todas as ferramentas necessárias em um único lugar para melhorar minha produtividade e garantir que meu tempo seja usado da forma mais eficiente possível.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+<br>
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠 Funcionalidades
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+**Central de Projetos**
+- Organize todos os seus projetos, incluindo:
+  - Projetos de software
+  - Ideias futuras
+  - Livros para ler
+  - Cursos para fazer
+
+<br>
+
+**Central de Guias**   
+  - Armazene guias e anotações
+    - Evitar retrabalho
+    - Otimizar o processo de aprendizado contínuo.
+
+<br>
+
+**Biblioteca de Componentes**
+
+- Crie, gerencie e reutilize componentes:
+  - Componentes React prontos para copiar e colar.
+
+> Futuramente, suporte a componentes em outras linguagens e frameworks.
+
+<br>
+
+**Geração de Interfaces com LLM**
+
+  - Crie prompts inteligentes para modelos de linguagem (LLMs) que geram interfaces visuais padronizadas.
+  - Personalize prompts com a lista de componentes cadastrados.
+
+<br>
+
+**Feed de Conteúdo Relevante**
+
+Evite distrações ao não precisar visitar páginas iniciais dessas redes.
+
+- Prototipagem de um feed pessoalizado que agrega:
+- Vídeos relevantes de YouTube.
+- Postagens selecionadas do Threads.
+- Newsletters recebidas por e-mail, tudo em um só lugar.
+
+<br>
+
+**Diário Inteligente**
+
+- Registro diário de atividades.
+- Geração automática de resumos semanais, mensais ou anuais utilizando IA.
+
+<br>
+
+## 🏗 Tecnologias utilizadas
+
+- React (Vite + Typescript)
+- TailwindCSS
+
+Demais ferramentas como o modelo de IA, estarão disponíveis no serviço de back-end, o qual não está disponível publicamente no momento. 
+
+## 📄 Licença
+
+Este projeto está em desenvolvimento e atualmente não possui uma licença definida. Sinta-se livre para fazer o que quiser.

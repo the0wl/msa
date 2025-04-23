@@ -1,0 +1,48 @@
+{
+  "http": {
+    "endpoint": "/user",
+    "method": ["GET", "PUT"]    
+  },  
+  "fields": [
+    {
+      "type": "text",
+      "label": "Usuário",
+      "name": "username",
+      "placeholder": "Digite seu usuário",
+      "readOnly": true,
+      "isRequired": true,
+      "validation": "^[a-zA-Z][a-zA-Z0-9_.-]{2,19}$",
+      "http-get-field": "username"
+    },
+    {
+      "type": "password",
+      "label": "Senha",
+      "name": "password",
+      "placeholder": "Digite sua senha",
+      "isRequired": true,
+      "validation": "^(?=.*[A-Za-z])(?=.*\\d)(?=.*[!@#$%^&*])[A-Za-z\\d!@#$%^&*]{8,}$",
+      "observacao": "Trocar em outra rota, sem o usuario ver a senha. Assim, é uma falha de seguranca"
+    },
+    {
+      "type": "select",
+      "label": "Ícone",
+      "name": "icon",
+      "options": [
+        {"value": "PERSON", "label": "Pessoa"}
+      ],
+      "http-get-field": "icon"
+    },
+    {
+      "type": "select",
+      "label": "Tema",
+      "name": "theme",
+      "options": [
+        {"value": "dark", "label": "Escuro"},
+        {"value": "light", "label": "Claro"},
+        {"value": "system", "label": "Sistema"}
+      ],
+      "http-search-endpoint": "/theme",
+      "http-get-field": "theme"
+    }
+  ]
+}

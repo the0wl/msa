@@ -1,0 +1,29 @@
+{
+  "submit": {
+    "action": "login",
+    "method": "POST",
+    "url": "http://127.0.0.1:8080/signin",
+    "buttonText": "Entrar"
+  },
+  "fields": [
+    {
+      "type": "text",
+      "label": "Usuário",
+      "name": "username",
+      "placeholder": "Digite seu usuário",
+      "isRequired": true,
+      "validation": "^[a-zA-Z][a-zA-Z0-9_.-]{2,19}$",
+      "onChange": "handleUsernameChange",
+      "onFocus": "handleUsernameFocus",
+      "onBlur": "handleUsernameBlur"
+    },
+    {
+      "type": "password",
+      "label": "Senha",
+      "name": "password",
+      "placeholder": "Digite sua senha",
+      "isRequired": true,
+      "validation": "^(?=.*[A-Za-z])(?=.*\\d)(?=.*[!@#$%^&*])[A-Za-z\\d!@#$%^&*]{8,}$"
+    }
+  ]
+}
