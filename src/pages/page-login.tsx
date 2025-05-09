@@ -1,6 +1,7 @@
-import React from 'react'
-import loginSchema from '../form-schema/login.json'
-import FormGenerator from '../components/form-generator'
+import { Button } from "@the0wl/ui";
+import { useNavigate } from "react-router-dom";
+import FormGenerator from "../components/form-generator";
+import loginSchema from "../form-schema/login.json";
 
 export default function PageLogin() {
   // const handleUsernameChange = (value, formData) => {
@@ -9,18 +10,24 @@ export default function PageLogin() {
   //   return value
   // };
 
+  const navigate = useNavigate();
+
   return (
-    <div className="min-h-screen flex items-center justify-center p-4">
+    <div className="flex min-h-screen items-center justify-center p-4">
       <div className="w-full max-w-md">
-        <FormGenerator 
+        <Button variant="solid">Button</Button>
+        <FormGenerator
           schema={loginSchema}
-          onSubmit={{}}
-          inputHandlers={{
-            handleUsernameFocus: () => console.log('Campo usuário focou'),
-            handleUsernameBlur: () => console.log('Campo usuário perdeu foco')
+          onSubmit={async (formData) => {
+            console.log(JSON.stringify(formData) + " Formulario enviado");
+            navigate("/");
           }}
-          />
+          inputHandlers={{
+            handleUsernameFocus: () => console.log("Campo usuário focou"),
+            handleUsernameBlur: () => console.log("Campo usuário perdeu foco"),
+          }}
+        />
       </div>
     </div>
-  )
+  );
 }

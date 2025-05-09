@@ -1,7 +1,7 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom';
-import PageMain from './pages/page-main';
-import PageLogin from './pages/page-login';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import PageLogin from "./pages/page-login";
+import PageMain from "./pages/page-main";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Route path="/" element={<PageMain />} />
       <Route path="/login" element={<PageLogin />} />
     </Routes>
-  )
+  );
 }
 
-export default App
+export default App;

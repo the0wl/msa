@@ -1,15 +1,14 @@
-import React from 'react';
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
-import '@fontsource-variable/inter';
-import '@fontsource/jetbrains-mono/400.css';
-import './index.css';
-import { BrowserRouter } from 'react-router-dom';
-import { UserProvider } from './contexts';
-import { AuthGate } from './components/auth-gate';
+import "@fontsource-variable/inter";
+import "@fontsource/jetbrains-mono/400.css";
+import React, { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App.tsx";
+import { AuthGate } from "./components/auth-gate";
+import { UserProvider } from "./contexts";
+import "./index.css";
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <UserProvider>
@@ -19,4 +18,4 @@ createRoot(document.getElementById('root')!).render(
       </UserProvider>
     </BrowserRouter>
   </StrictMode>,
-)
+);
